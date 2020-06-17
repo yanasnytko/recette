@@ -1,0 +1,168 @@
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Structure */
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    325deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(249, 249, 249, 1) 100%
+  );
+  color: rgb(27, 29, 38);
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#intro {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+header p {
+  text-align: justify;
+  margin: 2em 2em 0 0;
+  width: 80%;
+  line-height: 1.8em;
+}
+nav {
+  border-left: gray solid 1px;
+  margin-top: 2em;
+  padding-left: 2em;
+  position: fixed;
+  right: 0;
+  margin-right: 11%;
+  width: 12%;
+}
+
+main {
+  width: 80%;
+}
+
+footer,
+hr {
+  margin: 2em 0;
+}
+footer p {
+  padding: 0.2em;
+  text-align: center;
+  color: grey;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+/* Titres */
+h1 {
+  font-family: 'Bungee', cursive;
+  padding: 1.3em;
+  background-image: url('assets/bortsch_transparence.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  font-size: 4em;
+}
+h2,
+#ingredients span {
+  font-size: 2em;
+  color: #7a2c2d;
+  font-weight: bold;
+  padding: 0.8em 0 0.4em 0;
+}
+nav h2 {
+  padding: 0;
+  font-size: 1.4em;
+}
+#ingredients span {
+  font-size: 1.2em;
+  padding: 1em 0;
+  list-style: none;
+}
+
+/* Listes */
+main ul,
+ol {
+  margin-left: 1.2em;
+  line-height: 1.4em;
+}
+ol {
+  list-style: decimal outside;
+}
+ul {
+  list-style: circle outside;
+}
+li {
+  padding: 0.4em 0;
+  text-align: justify;
+}
+#infos ul,
+#ingredients > ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+span + ul {
+  padding-top: 0.2em;
+}
+.sous-categorie,
+#infos ul,
+nav ul {
+  list-style: none;
+}
+.sous-categorie:first-of-type,
+.sous-categorie:nth-of-type(2) {
+  max-width: 40%;
+}
+
+/* Liens */
+a {
+  color: grey;
+  text-decoration: none;
+}
+a:hover,
+#retour {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 0.4em;
+}
+#infos img {
+  display: block;
+  margin: 1em auto;
+}
